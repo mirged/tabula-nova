@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "language": "English",
+  "sources": [
+    {
+      "id": "fineweb-edu",
+      "stage": "pretraining-pilot",
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "config": "sample-10BT",
+      "file_prefix": "sample/10BT/",
+      "split": "train",
+      "text_field": "text",
+      "revision": "resolve_at_collection",
+      "dataset_card": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+      "dataset_license_label": "ODC-BY",
+      "default_documents": 1000,
+      "enabled": true
+    },
+    {
+      "id": "tabula-synth-v3",
+      "stage": "pretraining-pilot",
+      "generator": "tabula_nova.synthetic",
+      "profile": "train",
+      "default_documents": 1000,
+      "enabled": true
+    },
+    {
+      "id": "code",
+      "stage": "pretraining-expansion",
+      "dataset_card": "https://huggingface.co/datasets/bigcode/the-stack-v2",
+      "enabled": false,
+      "next_action": "Select licensed code sources and arrange content access before collecting."
+    },
+    {
+      "id": "openr1-math",
+      "stage": "instruction-tuning",
+      "dataset_card": "https://huggingface.co/datasets/open-r1/OpenR1-Math-220k",
+      "enabled": false,
+      "next_action": "After pretraining, select successful solutions and define an instruction format."
+    }
+  ]
+}

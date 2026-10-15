@@ -1,0 +1,19 @@
+{
+  "vocab_size": 512,
+  "dim": 64,
+  "layers": 2,
+  "heads": 4,
+  "kv_heads": 2,
+  "mlp_dim": 192,
+  "max_seq_len": 128,
+  "rope_theta": 500000.0,
+  "norm_eps": 1e-06,
+  "pad_id": 0,
+  "bos_id": 1,
+  "eos_id": 2,
+  "gradient_checkpointing": true,
+  "attention_gate": true,
+  "residual_block_size": 0,
+  "loss_chunk_size": 16,
+  "native_gqa": true
+}

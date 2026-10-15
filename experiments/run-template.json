@@ -1,0 +1,18 @@
+{
+  "run_id": "REPLACE_WITH_UNIQUE_NAME",
+  "purpose": "smoke | pilot | architecture comparison | pretraining | instruction tuning",
+  "model_preset": "pilot",
+  "model_config_file": "configs/pilot.json",
+  "train_config_file": "configs/train-pilot.json",
+  "data_directory": "prepared/workflow-pilot",
+  "data_metadata_sha256": null,
+  "source_manifests": [],
+  "environment_lock": "reports/environment-lock.txt",
+  "hardware": null,
+  "world_size": 1,
+  "output_directory": null,
+  "checkpoint": null,
+  "trained_supervised_tokens": null,
+  "evaluation": {},
+  "status": "planned"
+}

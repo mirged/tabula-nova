@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-15T00:21:30.476392+00:00",
+  "tests": 29,
+  "passed": 28,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_two_gpu_fsdp_checkpoint_resume_and_partial_export (test_runtime.IntegrationTests.test_two_gpu_fsdp_checkpoint_resume_and_partial_export)",
+      "reason": "two BF16-capable CUDA GPUs are required"
+    }
+  ],
+  "successful": true
+}

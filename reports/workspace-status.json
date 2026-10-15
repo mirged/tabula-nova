@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "present": true,
+    "path": "reports/environment.json"
+  },
+  "web_sample": {
+    "present": true,
+    "path": "data/raw/web-v1/manifest.json"
+  },
+  "synthetic_sample": {
+    "present": true,
+    "path": "data/raw/synthetic-v1/manifest.json"
+  },
+  "cleaned": {
+    "present": true,
+    "path": "data/cleaned/pilot-v1/manifest.json"
+  },
+  "mixed": {
+    "present": true,
+    "path": "data/mixed/pilot-v1/manifest.json"
+  },
+  "smoke_data": {
+    "present": true,
+    "path": "prepared/workflow-smoke/metadata.json"
+  },
+  "smoke_checkpoint": {
+    "present": true,
+    "path": "runs/workflow-smoke/latest.pt"
+  },
+  "native_tests": {
+    "present": true,
+    "path": "reports/native-tests.json"
+  },
+  "pilot_data": {
+    "present": true,
+    "path": "prepared/workflow-pilot/metadata.json"
+  },
+  "pilot_checkpoint": {
+    "present": false,
+    "path": "runs/workflow-pilot/latest.pt"
+  },
+  "oci_preflight": {
+    "present": false,
+    "path": "reports/oci-preflight.json"
+  }
+}

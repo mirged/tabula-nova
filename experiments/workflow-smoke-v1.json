@@ -1,0 +1,26 @@
+{
+  "run_id": "workflow-smoke-v1",
+  "purpose": "smoke",
+  "model_preset": "tiny",
+  "model_config_file": "configs/tiny.json",
+  "train_config_file": "configs/train-smoke.json",
+  "data_directory": "prepared/workflow-smoke",
+  "data_metadata_sha256": "9756eb7b881db21f13b8f89c1832b1ecf74ad9d3ac9bf0c160e199369621428f",
+  "source_manifests": [
+    "data/raw/web-v1/manifest.json",
+    "data/raw/synthetic-v1/manifest.json",
+    "data/cleaned/pilot-v1/manifest.json",
+    "data/mixed/pilot-v1/manifest.json"
+  ],
+  "environment_lock": "reports/environment-lock.txt",
+  "hardware": "CPU: isolated torch 2.8.0+cpu environment",
+  "world_size": 1,
+  "output_directory": "runs/workflow-smoke",
+  "checkpoint": "runs/workflow-smoke/latest.pt",
+  "trained_supervised_tokens": 384,
+  "evaluation": {
+    "final_validation_loss": 6.233915567398071,
+    "scope": "two validation batches; demonstrates pipeline execution only"
+  },
+  "status": "completed"
+}

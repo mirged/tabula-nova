@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabula-nova-8b"
+version = "0.1.0"
+description = "Tabula-derived 8B reasoning language model with OCI training and export"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.8,<2.9", "numpy>=1.24,<3", "tokenizers>=0.21,<0.23", "tqdm>=4.66,<5", "safetensors>=0.5,<1"]
+
+[project.optional-dependencies]
+oci = ["oci>=2.150,<3"]
+data = ["datasets>=3,<5", "huggingface-hub>=0.30,<2"]
+
+[project.scripts]
+tabula-nova = "tabula_nova.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tabula_nova = ["templates/*.py"]

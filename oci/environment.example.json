@@ -1,0 +1,9 @@
+{
+  "JOB_RUN_ENTRYPOINT": "tabula_nova_8b/oci/train.sh",
+  "NOVA_DATA_DIR": "/mnt/nova/prepared",
+  "NOVA_OUTPUT_DIR": "/mnt/nova/runs/8b",
+  "NOVA_GPUS_PER_NODE": "8",
+  "NOVA_NNODES": "1",
+  "NOVA_PRESET": "8b",
+  "NOVA_OCI_AUTH": "resource_principal"
+}

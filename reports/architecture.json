@@ -1,0 +1,32 @@
+{
+  "config": {
+    "vocab_size": 32768,
+    "dim": 4096,
+    "layers": 32,
+    "heads": 32,
+    "kv_heads": 8,
+    "mlp_dim": 16640,
+    "max_seq_len": 8192,
+    "rope_theta": 500000.0,
+    "norm_eps": 1e-06,
+    "pad_id": 0,
+    "bos_id": 1,
+    "eos_id": 2,
+    "gradient_checkpointing": true,
+    "attention_gate": true,
+    "residual_block_size": 0,
+    "loss_chunk_size": 128,
+    "native_gqa": true
+  },
+  "parameters": 8023977984,
+  "target_billions": 8.023977984,
+  "bf16_weights_gib": 14.945823669433594,
+  "fp32_adamw_state_and_gradient_gib": 119.56658935546875,
+  "sharded_persistent_state_gib_per_rank": 14.945823669433594,
+  "kv_cache_gib": 1.0,
+  "training_tokens": 160000000000,
+  "tokens_per_parameter": 19.94023417300543,
+  "approximate_training_flops_6NT": 7703018864640000000000,
+  "note": "Planning estimates exclude activations, all-gathers, temporary buffers, attention cost and checkpoint I/O; measure GPU memory in a pilot.",
+  "meta_verified": true
+}

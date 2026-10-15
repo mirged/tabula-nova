@@ -1,0 +1,12 @@
+{
+  "seq_len": 512,
+  "micro_batch_size": 1,
+  "accumulation_steps": 4,
+  "max_steps": 100,
+  "warmup_steps": 5,
+  "peak_lr": 0.0003,
+  "min_lr": 0.00003,
+  "eval_every": 20,
+  "eval_batches": 5,
+  "save_every": 20
+}

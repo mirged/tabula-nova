@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-15T00:19:24.227713+00:00",
+  "python": "3.13.5",
+  "executable": "/home/mirged/Projects/active/ai/research/tabula_nova_8b/.venv/bin/python",
+  "platform": "Linux-6.12.111+deb13-amd64-x86_64-with-glibc2.41",
+  "free_disk_gib": 395.5402145385742,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.5.4",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "datasets": "4.8.5",
+    "oci": "2.188.0"
+  },
+  "cuda_available": true,
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "total_memory_gib": 5.7158203125
+    }
+  ]
+}
